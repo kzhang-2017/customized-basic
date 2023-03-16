@@ -36,6 +36,32 @@
                     "label": "offering-1-flavor-1-label",
                     "name": "flavor-1-name",
                     "working_directory": "offering1/flavor1/working/directory",
+                    "terraform_version": "1.2",
+                    "outputs": [
+                        {
+                            "key": "Vpc_name",
+                            "description": "this a description for something"
+                        }
+                    ],
+                    "configuration": [
+                        {
+                            "custom_config": {
+                                "config_constraints": {
+                                    "generationType": "2"
+                                },
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "type": "vpc_region"
+                            },
+                            "default_value": "__NOT_SET__",
+                            "description": "Region where VPC will be created. To find your VPC region, use `ibmcloud is regions` command to find available regions.",
+                            "hidden": false,
+                            "key": "region",
+                            "required": true,
+                            "type": "string",
+                            "type_metadata": "string"
+                        }
+                    ],
                     "compliance": {
                         "controls": [
                             {
