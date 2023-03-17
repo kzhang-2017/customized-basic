@@ -60,6 +60,41 @@
                             "required": true,
                             "type": "string",
                             "type_metadata": "string"
+                        },
+                        {
+                            "custom_config": {
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "type": "multiline_secure_value"
+                            },
+                            "default_value": "\u003c\u003c-EOF\nINSERT YOUR KEY HERE\nEOF",
+                            "description": "Private SSH Key for SSH access via Jump Box to VSI. Must be the private key that pairs with the public key also used here",
+                            "display_name": "Multiline secure value",
+                            "hidden": false,
+                            "key": "ssh_private_key",
+                            "required": true,
+                            "type": "password",
+                            "type_metadata": "string"
+                        },
+                        {
+                            "custom_config": {
+                                "config_constraints": {
+                                    "catalogID": "33eb1d96-dfb4-4d60-a21a-c376ed0c89c3",
+                                    "flavorConstraint": "customedge",
+                                    "offeringID": "cfd4c957-eb94-4230-8bf6-d522f0c18590",
+                                    "versionConstraint": "\u003e=0.0.23"
+                                },
+                                "grouping": "deployment",
+                                "original_grouping": "deployment",
+                                "type": "schematics_workspace"
+                            },
+                            "default_value": "__NOT_SET__",
+                            "description": "IBM Cloud Schematics workspace ID of an existing custom-deployable-arch.",
+                            "hidden": false,
+                            "key": "prerequisite_workspace_id",
+                            "required": true,
+                            "type": "string",
+                            "type_metadata": "string"
                         }
                     ],
                     "compliance": {
