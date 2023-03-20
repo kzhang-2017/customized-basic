@@ -4,7 +4,7 @@
             "name": "offering-1-name",
             "label": "offering-1-label",
             "version": "0.0.1",
-            "tags": [ "tag1", "tag2" ],
+            "tags": [ "tag1", "tag2", "virtualservers" ],
             "keywords": [ "keyword1", "keyword2" ],
             "short_description": "short description text",
             "long_description": "long description text",
@@ -20,6 +20,17 @@
                     "title": "Creates virtual servers for workloads"
                 }
             ],
+            "support" : {
+                "url": "https://support.com",
+                "process": "Call our toll free number",
+                "support_details": [
+                    {
+                        "type": "phone",
+                        "contact": "1-800-123-4567"
+                    }
+                ],
+                "support_type": "third_party"
+            },
             "module_info": {
                 "works_with": [
                     {
@@ -58,8 +69,7 @@
                             "hidden": false,
                             "key": "region",
                             "required": true,
-                            "type": "string",
-                            "type_metadata": "string"
+                            "type": "string"
                         },
                         {
                             "custom_config": {
@@ -73,8 +83,7 @@
                             "hidden": false,
                             "key": "ssh_private_key",
                             "required": true,
-                            "type": "password",
-                            "type_metadata": "string"
+                            "type": "password"
                         },
                         {
                             "custom_config": {
@@ -93,8 +102,7 @@
                             "hidden": false,
                             "key": "prerequisite_workspace_id",
                             "required": true,
-                            "type": "string",
-                            "type_metadata": "string"
+                            "type": "string"
                         }
                     ],
                     "compliance": {
