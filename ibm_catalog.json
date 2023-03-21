@@ -20,17 +20,7 @@
                     "title": "Creates virtual servers for workloads"
                 }
             ],
-            "support" : {
-                "url": "https://support.com",
-                "process": "Call our toll free number",
-                "support_details": [
-                    {
-                        "type": "phone",
-                        "contact": "1-800-123-4567"
-                    }
-                ],
-                "support_type": "third_party"
-            },
+            "support_details": "sample support process of some kind",
             "module_info": {
                 "works_with": [
                     {
