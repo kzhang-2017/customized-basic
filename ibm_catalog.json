@@ -48,6 +48,7 @@
                     "name": "flavor-1-name",
                     "working_directory": "offering1/flavor1/working/directory",
                     "terraform_version": "1.2",
+                    "is_full_stack": true,
                     "outputs": [
                         {
                             "key": "vpc_name",
@@ -183,6 +184,7 @@
                     "label": "offering-2-flavor-label",
                     "name": "flavor-name",
                     "working_directory": "offering2/flavor1/working/directory",
+                    "is_full_stack": false,
                     "compliance": {
                         "controls": [
                             {
