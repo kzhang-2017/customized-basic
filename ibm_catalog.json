@@ -282,6 +282,7 @@
                     "label": "offering-2-flavor-label",
                     "name": "flavor-name",
                     "working_directory": "offering2/flavor2/working/directory",
+                    "is_full_stack": true,
                     "compliance": {
                         "controls": [
                             {
