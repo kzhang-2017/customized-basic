@@ -38,7 +38,7 @@
                     "name": "flavor-1-name",
                     "working_directory": "offering1/flavor1/working/directory",
                     "terraform_version": "1.2",
-                    "is_full_stack": true,
+                    "arch_install_type": "fullstack",
                     "outputs": [
                         {
                             "key": "vpc_name",
@@ -174,7 +174,7 @@
                     "label": "offering-2-flavor-label",
                     "name": "flavor-name",
                     "working_directory": "offering2/flavor1/working/directory",
-                    "is_full_stack": false,
+                    "arch_install_type": "extension",
                     "compliance": {
                         "controls": [
                             {
@@ -282,7 +282,7 @@
                     "label": "offering-2-flavor-label",
                     "name": "flavor-name",
                     "working_directory": "offering2/flavor2/working/directory",
-                    "is_full_stack": true,
+                    "arch_install_type": "fullstack",
                     "compliance": {
                         "controls": [
                             {
